@@ -1,0 +1,19 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "ReadOnlyCostScan",
+      "Effect": "Allow",
+      "Action": [
+        "ec2:DescribeVolumes",
+        "ec2:DescribeAddresses",
+        "ec2:DescribeSnapshots",
+        "ec2:DescribeInstances",
+        "cloudwatch:GetMetricStatistics",
+        "s3:ListAllMyBuckets",
+        "s3:GetLifecycleConfiguration"
+      ],
+      "Resource": "*"
+    }
+  ]
+}
